@@ -1,0 +1,24 @@
+#!/bin/sh
+
+export PATH=~/bin:~/sbin:$PATH
+
+export EDITOR=nano
+
+alias ls='ls --group-directories-first --color=auto'
+alias dir='ls'
+alias ll='ls -l'
+alias la='ll -a'
+
+alias ll_aur='ll ~/Programs/aur/'
+alias cd_aur='cd ~/Programs/aur/'
+
+alias gimme='sudo pacman -S'
+alias remove='sudo pacman -R'
+alias update='sudo pacman -Syu'
+alias clear='clear ; ~/sbin/pride'
+
+alias nano='nano -E -T 4 -i -l'
+
+alias explorer='silent nautilus'
+
+pride
