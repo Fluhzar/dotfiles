@@ -71,7 +71,9 @@ HIST_STAMPS="yyyy-mm-dd"
 plugins=( cargo common-aliases extract git rust rustup rvm vscode )
 
 
-source ~/.config/fluhzar/.archrc
+# Custom Addition:
+# Custom dotfile sourcing written by Fluhzar
+source ~/.config/fluhzar/.distrorc
 
 
 source $ZSH/oh-my-zsh.sh

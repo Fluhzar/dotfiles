@@ -1,0 +1,12 @@
+#!/bin/sh
+
+source ~/.config/fluhzar/.commonrc
+
+DISTRO_ID=`cat /etc/*-release | grep DISTRIB_ID= | cut -b 12-`
+if [ $DISTRO_ID = "Ubuntu" ]
+then
+    source ~/.config/fluhzar/.ubunturc
+elif [ $DISTRO_ID = "Arch" ] || [ $DISTRO_ID = "Manjaro" ]
+then
+    source ~/.config/fluhzar/.archrc
+fi

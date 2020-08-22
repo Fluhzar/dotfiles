@@ -1,0 +1,13 @@
+#!/bin/sh
+
+export PATH=~/bin:$PATH
+
+export EDITOR=nano
+alias nano='nano -E -T 4 -i -l'
+
+alias dir='ls'
+
+alias clear='clear ; pride'
+
+# sleep 0.1
+pride
