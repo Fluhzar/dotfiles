@@ -7,5 +7,7 @@ This repo contains the common dotfiles I use
 These dotfiles are for shell customization, in case you don't know that... The shell-specific `.zshrc` and `.bashrc` files are set to also source the distro-specific dot file (for now just `.archrc`).
 
 * `.zshrc` - My ZSH config, complete with external `ZSH2000` theme and some OhMyZ.sh plugins.
-* `.archrc` - My personal config additions that are specialized for Arch-based distros.
-* `.bashrc` - IDK if I'll ever go back to bash, but it's probably a good idea to include these as well
+* `.distrorc` - Script that finds out the distro and sources a specific distro's associated `.rc` file (e.g. `arch.rc`)
+* `.commonrc` - My personal config additions that are generic across any distro.
+* `.archrc` - My personal config additions specialized for arch-based distros.
+* `.ubunturc` - My personal config additions specialized for ubuntu-based distros.
