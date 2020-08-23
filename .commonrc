@@ -9,5 +9,5 @@ alias dir='ls'
 
 alias clear='clear ; pride'
 
-# sleep 0.1
+sleep 0.1
 pride
