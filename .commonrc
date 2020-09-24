@@ -7,6 +7,8 @@ alias nano='nano -E -T 4 -i -l'
 
 alias dir='ls'
 
+alias oops='sudo $(history -p !!)'
+
 alias clear='clear ; pride'
 
 sleep 0.1
