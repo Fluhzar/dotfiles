@@ -7,4 +7,4 @@ alias gimme='sudo pacman -S'
 alias remove='sudo pacman -R'
 alias update='sudo pacman -Syu'
 
-alias explorer='silent nautilus'
+alias explorer='silent nemo'
