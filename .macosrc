@@ -1,0 +1,3 @@
+alias gimme='brew install'
+alias remove='brew remove'
+alias update='brew update'
