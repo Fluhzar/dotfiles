@@ -9,7 +9,7 @@ alias dir='ls'
 
 alias oops='sudo $(history -p !!)'
 
-alias clear='clear ; pride'
+alias clear='clear ; ~/.config/fluhzar/sbin/pride'
 
 sleep 0.1
 pride

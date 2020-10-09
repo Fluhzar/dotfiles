@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+
+BLUE=`printf '\e[48;2;70;194;228m'`
+PINK=`printf '\e[48;2;229;150;182m'`
+WHITE=`printf '\e[48;2;255;255;255m'`
+LIME=`printf '\e[48;2;184;244;131m'`
+GRAY=`printf '\e[48;2;185;185;185m'`
+BLACK=`printf '\e[48;2;0;0;0m'`
+ROW=$(printf %$(tput cols)s)
+CLEAR=`tput sgr0`
+
+# #trans flag
+# echo "$BLUE$ROW"
+# echo "$PINK$ROW"
+# echo "$WHITE$ROW"
+# echo "$PINK$ROW"
+# echo "$BLUE$ROW"
+#agender flag
+echo "$BLACK$ROW"
+echo "$GRAY$ROW"
+echo "$WHITE$ROW"
+echo "$LIME$ROW"
+echo "$WHITE$ROW"
+echo "$GRAY$ROW"
+echo "$BLACK$ROW$CLEAR"
