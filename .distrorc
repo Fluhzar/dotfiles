@@ -2,20 +2,11 @@
 
 source ~/.config/fluhzar/.commonrc
 
-DISTRO_RC=
+DIR="$HOME/.config/$USER"
+DISTRO=$($DIR/sbin/print_distro)
+DISTRO_PREFIX="$DIR/."
+DISTRO_SUFFIX="rc"
 
-~/.config/fluhzar/sbin/etc_release_exists
-
-if [ $? -eq 0 ]
-then
-    DISTRO_ID=`cat /etc/*-release | grep DISTRIB_ID= | cut -b 12-`
-    DISTRO_ID_LC=`echo $DISTRO_ID | tr '[:upper:]' '[:lower:]'`
-    PREFIX="$HOME/.config/fluhzar/."
-    RC="rc"
-    DISTRO_RC=$PREFIX$DISTRO_ID_LC$RC
-else
-    DISTRO_RC="$HOME/.config/fluhzar/.macosrc"
-fi
-
+DISTRO_RC="$DISTRO_PREFIX$DISTRO$DISTRO_SUFFIX"
 
 source $DISTRO_RC

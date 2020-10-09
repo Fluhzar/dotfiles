@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/sh
 
 BLUE=`printf '\e[48;2;70;194;228m'`
 PINK=`printf '\e[48;2;229;150;182m'`

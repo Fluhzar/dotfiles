@@ -1,0 +1,16 @@
+#/bin/sh
+
+# test if any `/etc/*-release` files exist
+$HOME/.config/$USER/sbin/etc_release_exists
+if [ $? -eq 0 ]
+then
+    # get the line contaning the distro information and cut to just the name
+    DISTRO_ID=`cat /etc/*-release | grep DISTRIB_ID= | cut -b 12-`
+    # ensure the distro name is lowercase
+    DISTRO_ID_LC=`echo $DISTRO_ID | tr '[:upper:]' '[:lower:]'`
+    # print the distro name
+    echo $DISTRO_ID_LC
+else
+    # most linux systems should have a /etc/*-release file so this is a fairly safe default
+    echo macos
+fi
