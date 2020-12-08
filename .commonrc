@@ -5,6 +5,8 @@ export PATH=~/bin:$PATH
 export EDITOR=nano
 alias nano='nano -E -T 4 -i -l'
 
+export EDITOR_GUI=vsc
+
 alias dir='ls'
 
 alias oops='sudo $(history -p !!)'
