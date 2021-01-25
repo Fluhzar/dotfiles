@@ -5,6 +5,6 @@ alias cd_aur='cd ~/Programs/aur/'
 
 alias gimme='sudo pacman -S'
 alias remove='sudo pacman -R'
-alias update='sudo pacman -Syu'
+alias update='sudo pacman -Syu ; update_rust'
 
 alias explorer='silent nemo'

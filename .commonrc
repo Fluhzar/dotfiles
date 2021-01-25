@@ -13,5 +13,9 @@ alias oops='sudo $(history -p !!)'
 
 alias clear='clear ; pride'
 
+alias update_cargo='cargo install-update -a'
+alias update_rustup='rustup update'
+alias update_rust'update_cargo && update_rustup'
+
 sleep 0.1
 pride

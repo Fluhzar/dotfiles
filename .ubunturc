@@ -2,7 +2,7 @@
 
 alias gimme='sudo apt install'
 alias remove='sudo apt remove && sudo apt autoremove'
-alias update='sudo apt update && sudo apt upgrade'
+alias update='sudo apt update && sudo apt upgrade && update_rust'
 
 alias explorer='explorer.exe'
 
